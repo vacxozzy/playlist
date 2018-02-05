@@ -21,6 +21,7 @@ var mySong = {
 	"artist":"Bruno Mars",
 	"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
 	"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+	"song-length":"3 minutes",
 }
 
 var myPlayList = [
@@ -49,15 +50,11 @@ var myPlayList = [
 
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
-  
-
-
 
 });
 
 function displayList(){
-
-
+	$(".songs").html()
   
 }
 
