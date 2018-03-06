@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html>
-
   <head>
       <title>Playlist</title>
-      
       <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-      <!-- Link style.css here -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
-
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-       <!-- Link script.js here -->
       <script src="js/script.js"></script>
-
-
   </head>
 
   <body>
-    <div class="container text-center">
-      <h1> My Playlist </h1>
-      <input>
-      <input>
-      <input>
-      <input>
-      <button id="add-song"> Add Song </button>
-      <div class="songs">
-        
-        
-        
-      </div>  
-      
+    <button data-toggle="modal" data-target="#newSongPopup">Add New Song</button>
+    <div class="song">
+      <img class="albumCoverDisplay" src="http://www.greatwhatsit.com/wp-content/uploads/2012/03/jeremiah1.jpg">
+      <p id="songNameDisplay">Song:</p>
+      <p id="artistNameDisplay">Artist:</p>
+      <p id="albumNameDisplay">Album:</p>
     </div>
+    <div id="newSongPopup" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add to Playlist</h5>
+          </div>
+          <div class="modal-body">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://static1.squarespace.com/static/536ae170e4b0610483538ec5/t/54832c2ae4b04d71ee58f7fe/1519678471924/" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Input the song name, artist, url to the song and image to create the next song on your playlist.</p>
+                </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <p>Artist:</p>
+                  <input>
+                </li>
+                <li class="list-group-item">
+                  <p>Song Name:</p>
+                  <input>
+                </li>
+                <li class="list-group-item">
+                  <p>URL:</p>
+                  <input>
+                </li>
+                <li class="list-group-item">
+                  <p>Image:</p>
+                  <input>
+                </li>
+              </ul>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="saveChanges">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
-
 </html>

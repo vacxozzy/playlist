@@ -54,8 +54,7 @@ $( document ).ready(function() {
 });
 
 function displayList(){
-	$(".songs").html()
-  
+	
 }
 
 function clearList(){
@@ -66,6 +65,4 @@ function clearList(){
 
 function addSong(){
  
-  
-  
 }

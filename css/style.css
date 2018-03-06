@@ -11,3 +11,12 @@
 .price{
     color: #0000ff;
 }
+
+.albumCoverDisplay {
+    width: 500px;
+    height: 500px;
+}
+
+.modal-body .modal-title .card-body {
+    text-align: center;
+}
