@@ -10,13 +10,7 @@
   </head>
 
   <body>
-    <button data-toggle="modal" data-target="#newSongPopup">Add New Song</button>
-    <div class="song">
-      <img class="albumCoverDisplay" src="http://www.greatwhatsit.com/wp-content/uploads/2012/03/jeremiah1.jpg">
-      <p id="songNameDisplay">Song:</p>
-      <p id="artistNameDisplay">Artist:</p>
-      <p id="albumNameDisplay">Album:</p>
-    </div>
+    <button id="newSongButton" data-toggle="modal" data-target="#newSongPopup">Add New Song</button>
     <div id="newSongPopup" class="modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -31,25 +25,25 @@
                 </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <p>Artist:</p>
-                  <input>
-                </li>
-                <li class="list-group-item">
                   <p>Song Name:</p>
-                  <input>
+                  <input id="#songInput">
                 </li>
                 <li class="list-group-item">
-                  <p>URL:</p>
-                  <input>
+                  <p>Artist:</p>
+                  <input id="#aristInput">
                 </li>
                 <li class="list-group-item">
-                  <p>Image:</p>
-                  <input>
+                  <p> MP3 URL:</p>
+                  <input id="mp3-url">
+                </li>
+                <li class="list-group-item">
+                  <p>Album Image:</p>
+                  <input id="image-url">
                 </li>
               </ul>
             </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="saveChanges">Save changes</button>
+            <button id="addSongModal" type="button" class="btn btn-primary">Add Song</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
