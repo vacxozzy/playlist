@@ -1,18 +1,18 @@
 // quick fix for Cloud9 warning:
 /* global $ myPlaylist*/
-var songInput = $("#songInput").val();
-var artistInput = $("#artistInput").val();
-var mp3Url = $("#mp3-url").val();
-var imageUrl = $("#image-url").val();
+// var songInput = $("#songInput").val();
+// var artistInput = $("#artistInput").val();
+// var mp3Url = $("#mp3-url").val();
+// var imageUrl = $("#image-url").val();
 
-var mySong = {
-	"song":"songInput",
-	"aritst":"artistInput",
-	"mp3url":"mp3Url",
-	"imageURL":"imageURL"
-}
+// var mySong = {
+// 	"song":"songInput",
+// 	"aritst":"artistInput",
+// 	"mp3url":"mp3Url",
+// 	"imageURL":"imageURL"
+// };
 
-var myPlayList = [
+var myPlaylist = [
 	{
 		"title":"24K Magic",
 		"artist":"Bruno Mars",
@@ -32,13 +32,11 @@ var myPlayList = [
 		"imageURL":"http://assets-s3.usmagazine.com/uploads/assets/articles/93827-justin-biebers-sorry-choreographer-spills-video-style-secrets-parris-goebel/1445638548_justin-bieber-sorry-dancers-zoom.jpg",
 	}
 
-]
+];
 
-$( document ).ready(function() {
-	displayList(myPlayList);
-});
 
-function displayList(){
+
+function displaylist(){
 	var title = myPlaylist[0].title;
 	var artist = myPlaylist[0].artist;
 	var mp3URL = myPlaylist[0].mp3URL;
@@ -48,6 +46,7 @@ function displayList(){
 			<figure class=”frame”>
 				<img src=${imageURL}>
 				<figcaption>${title} by ${artist}</figcaption>
+				<a href=${mp3URL}>Play Song</a>
 			</figure>
 		`)
 	}
@@ -63,3 +62,7 @@ function addSong(){
 	myPlaylist.push("");
 
 }
+
+$( document ).ready(function() {
+	displaylist(myPlaylist);
+});
